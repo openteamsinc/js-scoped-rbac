@@ -1,3 +1,6 @@
+.. image:: https://github.com/openteamsinc/js-scoped-rbac/workflows/Node.js%20CI/badge.svg
+   :target: Node.js CI
+
 ==============
 js_scoped_rbac
 ==============
