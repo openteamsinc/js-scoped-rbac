@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "../lib/__test__",
+    "composite": true,
+    "declaration": true
+  },
+  "include": [ "." ],
+  "references": [
+    { "path": "../src" }
+  ],
+  "extends": "../tsconfig.json"
+}

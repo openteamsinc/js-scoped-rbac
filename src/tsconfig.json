@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "../lib/src",
+    "composite": true,
+    "module": "UMD",
+    "declaration": true
+  },
+  "include": [ "." ],
+  "extends": "../tsconfig.json"
+}

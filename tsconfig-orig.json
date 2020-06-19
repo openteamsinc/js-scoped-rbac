@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es2018"],
+    "sourceMap": true,
+    //"module": "UMD",
+    "rootDir": "."
+  },
+  "exclude": ["node_modules", "**/__tests__/*"],
+}
