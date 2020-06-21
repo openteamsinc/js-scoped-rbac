@@ -1,6 +1,6 @@
 {
   "name": "scoped-rbac",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A scoped RBAC policy engine for use with django-scoped-rbac or any other scoped RBAC implementation.",
   "main": "lib/src/scoped-rbac.js",
   "scripts": {
