@@ -13,7 +13,7 @@ function policyFor(context: string, jsonPolicy: rbac.PolicySource) {
   return rootPolicy;
 }
 
-test.skip('empty policy', t => {
+test('empty policy', t => {
   const policyObject = {};
   let policy = policyFor("a", policyObject);
   t.false(policy.shouldAllow(permissionOne, "a", dummySubject));
@@ -25,7 +25,7 @@ test.skip('empty policy', t => {
   t.false(policy.shouldAllow(permissionSuperUserOnly, "a", dummySubject));
 });
 
-test.skip('all allowed', t => {
+test('all allowed', t => {
   const policy = policyFor("a", true);
   t.true(policy.shouldAllow(permissionOne, "a", dummySubject));
   t.true(policy.shouldAllow(permissionSuperUserOnly, "a", dummySubject));
@@ -33,7 +33,7 @@ test.skip('all allowed', t => {
   t.false(policy.shouldAllow(permissionSuperUserOnly, "b", dummySubject));
 });
 
-test.skip('string allowed', t => {
+test('string allowed', t => {
   const policy = policyFor("a", "GET");
   t.true(policy.shouldAllow(permissionOne, "a", dummySubject));
   t.false(policy.shouldAllow(permissionSuperUserOnly, "a", dummySubject));
@@ -41,7 +41,7 @@ test.skip('string allowed', t => {
   t.false(policy.shouldAllow(permissionSuperUserOnly, "b", dummySubject));
 });
 
-test.skip('list allowed', t => {
+test('list allowed', t => {
   const policy = policyFor("a", [ "GET", "POST" ]);
   t.true(policy.shouldAllow(
     {action: "GET", resourceType: dummyResourceType}, "a", dummySubject));
