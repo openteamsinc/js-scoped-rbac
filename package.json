@@ -1,6 +1,6 @@
 {
   "name": "scoped-rbac",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A scoped RBAC policy engine for use with django-scoped-rbac or any other scoped RBAC implementation.",
   "main": "lib/src/scoped-rbac.js",
   "scripts": {
@@ -12,6 +12,10 @@
   },
   "author": "David Charboneau",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openteamsinc/js-scoped-rbac.git"
+  },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "ava": "^3.9.0",
